@@ -151,9 +151,110 @@
   Generated Level (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
 ]
 
-== fb128
-#columns-content()[
-  #figure(image("/images/0220/compf2_fb128.gif", width: 100%), numbering: none)
-][
-  #figure(image("/images/0220/compf2_fb128wcuts.gif", width: 100%), numbering: none)
+== fb128 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place(top)[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0220/compf2_fb128.gif", width: 105%), numbering: none,),
+      figure(image("/images/0220/compf2_fb128wcuts.gif", width: 105%), numbering: none,),
+    ),
+  )
 ]
+#v(12.5em)
+- fb128 (right) is the actual closure (with \ cuts in fb128 applied manually).
+- Closure for 2010 better than 2015/2018.
+#place(bottom+right, dy: 3.5em)[#figure(image("/images/0220/comp_mult_fb128wcuts.gif", width: 45%), numbering: none,),]
+
+== fb128 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place()[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0220/compf2_fb128wcutsPrim.gif", width: 102%), numbering: none,),
+      figure(image("/images/0220/compf2_fb128wcutswomat.gif", width: 102%), numbering: none,),
+    ),
+  )
+]
+#place(horizon, dy: 3em)[
+  #columns-content()[
+    - Closure for 2010 better than 2015/2018. 
+  ][
+    #v(8.4em)
+    #figure(image("/images/0220/compf2_fb128wcutswowd.gif", width: 102%), numbering: none,),
+  ]]
+
+== fb768 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place()[
+  #figure(
+    grid(
+      columns: (1.3fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0220/compf2_fb768.gif", width: 102%), numbering: none,),
+      figure(image("/images/0220/comp_mult_fb768.gif", width: 110%), numbering: none,),
+    ),
+  )
+]
+#v(14.5em)
+- fb768 does not show good closure for 2010, 2015/2018.
+- the trends for all the datasets are alike.
+- stricter cuts can improve the closure.
+
+== fb768 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place()[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      rows: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0220/compf2_fb768.gif", width: 95%), numbering: none,),
+      figure(image("/images/0220/compf2_fb768Prim.gif", width: 95%), numbering: none,),
+      figure(image("/images/0220/compf2_fb768womat.gif", width: 95%), numbering: none,),
+      figure(image("/images/0220/compf2_fb768wowd.gif", width: 95%), numbering: none,),
+    ),
+  )
+]
+
+== TPC clusters cuts
+#columns-content()[
+  - An additional set of cuts to reduce track spltting/merging effects.
+  - \#sharedclusters/\#clusters $<=$ 0.3.
+  - \#sharedclusters/\#crossedRows $<=$ 0.25.
+  - \#findableclusters/\#clusters $>=$ 0.8.
+  #v(9.5em)
+  #text(0.6em)[cuts taken from analysis note: #note[#link("https://alice-notes.web.cern.ch/node/1653")[https://alice-notes.web.cern.ch/node/1653].]]
+][
+  #place()[
+    #figure(
+      grid(
+        columns: 1fr,
+        rows: (1fr, 1fr),
+        inset: 0pt,
+        align: center,
+        figure(image("/images/0220/sharedclusters.gif", width: 105%), numbering: none,),
+        figure(image("/images/0220/fableclusters.gif", width: 105%), numbering: none,),
+      ),
+    )
+  ]
+]
+
+== fb128 (0.2 $<=$ _p_#sub[T] $<=$ 2.0) with TPC clusters cuts
+#place()[
+  #figure(
+    grid(
+      columns: (1.2fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0220/compf2_fb128wcutsi2.gif", width: 102%), numbering: none,),
+      figure(image("/images/0220/compf2_fb128wcutsPrimi2.gif", width: 107%), numbering: none,),
+    ),
+  )
+]
+#v(14.5em)
+- Closure worsens for all the datasets.
