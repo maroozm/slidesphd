@@ -258,3 +258,153 @@
 ]
 #v(14.5em)
 - Closure worsens for all the datasets.
+
+== fb768 (0.2 $<=$ _p_#sub[T] $<=$ 2.0) with TPC clusters cuts
+#place()[
+  #figure(
+    grid(
+      columns: (1.2fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0220/compf2_fb768i2.gif", width: 102%), numbering: none,),
+      figure(image("/images/0220/compf2_fb768Primi2.gif", width: 107%), numbering: none,),
+    ),
+  )
+]
+#v(14.5em)
+- Closure improves for all the datasets.
+- Similar trend across datasets.
+- 0.2 $<=$ _p_#sub[T] $<=$ 0.4 has different efficiency for 2.76 TeV and 5.02 TeV.
+- Should check 0.4 $<=$ _p_#sub[T] $<=$ 2.0.
+
+== Generated and fb128 (0.4 $<=$ _p_#sub[T] $<=$ 2.0)
+#place()[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0420/compf2_generated.png", width: 102%), numbering: none,),
+      figure(image("/images/0420/compf2_fb128wcuts.png", width: 102%), numbering: none,),
+    ),
+  )
+]
+#place(horizon, dy: 3em)[
+  #columns-content()[
+    - Closure for 2010 better than 2015/2018.
+  ][
+    #v(8.4em)
+    #figure(image("/images/0420/comp_mult_fb128wcuts.png", width: 92%), numbering: none,),
+  ]]
+
+== Generated and fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0)
+#place()[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0420/compf2_generated.png", width: 102%), numbering: none,),
+      figure(image("/images/0420/compf2_fb768.png", width: 102%), numbering: none,),
+    ),
+  )
+]
+#place(horizon, dy: 3em)[
+  #columns-content()[
+    - Closure not good for all datasets.
+  ][
+    #v(8.4em)
+    #figure(image("/images/0420/comp_mult_fb768.png", width: 92%), numbering: none,),
+  ]]
+
+== fb128 (0.4 $<=$ _p_#sub[T] $<=$ 2.0) with TPC clusters cuts
+#place()[
+  #figure(
+    grid(
+      columns: (1.2fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0420/compf2_fb128wcutsi2.png", width: 102%), numbering: none,),
+      figure(image("/images/0420/compf2_fb128wcutsPrimi2.png", width: 107%), numbering: none,),
+    ),
+  )
+]
+#v(14.5em)
+- Closure deteriorates for all the datasets.
+
+== fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0) with TPC clusters cuts
+#place()[
+  #figure(
+    grid(
+      columns: (1.2fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0420/compf2_fb768i2.png", width: 102%), numbering: none,),
+      figure(image("/images/0420/compf2_fb768Primi2.png", width: 107%), numbering: none,),
+    ),
+  )
+]
+#v(14.5em)
+- Closure improves with TPC clusters cuts for fb128
+
+== _p_#sub[T] dependent DCA cuts
+#columns-content()[
+  - An additional set of cuts to improve the closure.
+  - 2015/2018 data: Maximum DCA#sub[xy] cut: $0.028 + 0.04 * p_T^((1.01))$
+  #text(0.6em)[cut taken from analysis note: #note[#link("https://alice-notes.web.cern.ch/node/1653")[https://alice-notes.web.cern.ch/node/1653].]]
+  - 2010 data: Maximum DCA#sub[xy] cut: $0.0182 + 0.035 / p_T^((1.01))$
+  #text(0.6em)[cut taken from analysis note: #note[#link("https://alice-notes.web.cern.ch/node/736")[https://alice-notes.web.cern.ch/node/736].]]
+][
+  #place()[
+    #figure(
+      grid(
+        columns: 1fr,
+        rows: (1fr, 1fr),
+        inset: 0pt,
+        align: center,
+        figure(image("/images/dcaxywocut2010.gif", width: 105%), numbering: none,),
+        figure(image("/images/dcaxycut2010.gif", width: 105%), numbering: none,),
+      ),
+    )
+  ]
+]
+
+== fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0) with multiple cuts
+#place()[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0420/compf2_fb768dca.png", width: 102%), numbering: none, caption: "fb768 with DCA cut"),
+      figure(image("/images/0420/compf2_fb768rchi2dca.png", width: 102%), numbering: none, caption: "fb768 wih DCA cut and tpc #crossed rows >= 80"),
+    ),
+  )
+]
+
+== fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0) with multiple cuts
+#place()[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0420/compf2_fb768shclsdca.png", width: 102%), numbering: none, caption: "fb768 with DCA cut and sharedclusters cuts"),
+      figure(image("/images/0420/compf2_fb768shclsrchi2.png", width: 102%), numbering: none, caption: "fb768 wih shared clusters cuts and tpc #crossed rows >= 80"),
+    ),
+  )
+]
+
+
+== fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0) with multiple cuts (primaries only)
+#place(center, dy: 2em)[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: 0pt,
+      align: center,
+      figure(image("/images/0420/compf2_fb768rchi2dcaPrim.png", width: 102%), numbering: none, caption: "fb768 with DCA cut and tpc #crossed rows >= 80"),
+      figure(image("/images/0420/compf2_fb768shclsrchi2dcaPrim.png", width: 102%), numbering: none, caption: "fb768 wih DCA cut, shared clusters cuts and tpc #crossed rows >= 80"),
+    ),
+  )
+]
