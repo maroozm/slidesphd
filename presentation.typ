@@ -408,3 +408,17 @@
     ),
   )
 ]
+
+= Conclusions
+== Conclusions
+- filterbits (128 and 768) studied for Pb--Pb HIJING datasets of 2010 (2.76 TeV), 2015 (5.02 TeV) and 2018 (5.02 TeV):
+  - QA within $abs(v_z) < 10$, $abs(eta) < 0.8$, 0--10% central events of each dataset.
+  - closure behaviour of $F_" q" (M)$ within $abs(v_z) < 10$, $abs(eta) < 0.8$, _p_#sub[T] ranges: 0.2--2.0 and 0.4--2.0, and most central 0--5% events.
+- fb128 method unreliable in AODs. Manual cuts work but show higher contamination (material + weak decays) across datasets. Good baseline closure for 2010 but trends alike.
+- fb768 cleaner but poorer closure baseline.
+- TPC shared cluster cuts used to mitigate track splitting/merging effects: \#sharedclusters/\#clusters $<=$ 0.3, \#sharedclusters/\#crossedRows $<=$ 0.25, and \#findableclusters/\#clusters $>=$ 0.8. fb768 closure improves consistently with TPC clusters cuts, worsens for fb128.
+- _p_#sub[T] dependent DCA#sub[xy] cuts used:
+  - Combined with \#crossedRows $>= 80$ and shared-clusters cuts $arrow$ #note[best performance for fb768.]
+
+
+= Thank you
