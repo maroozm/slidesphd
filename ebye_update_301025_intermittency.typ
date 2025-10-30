@@ -391,7 +391,7 @@ $F_q (M) equiv  (lr(angle.l, size: #200%) 1/M^(2) sum_(i=1)^(M^(2)) n_"ie" (n_"i
   )
 ]
 #v(14.5em)
-- Closure improves with TPC clusters cuts for fb128
+- Closure improves with TPC clusters cuts for fb768
 
 == _p_#sub[T] dependent DCA cuts
 #columns-content()[
@@ -436,7 +436,7 @@ $F_q (M) equiv  (lr(angle.l, size: #200%) 1/M^(2) sum_(i=1)^(M^(2)) n_"ie" (n_"i
       inset: 0pt,
       align: center,
       figure(image("/images/0420/compf2_fb768shclsdca.png", width: 102%), numbering: none, caption: "fb768 with DCA cut and sharedclusters cuts"),
-      figure(image("/images/0420/compf2_fb768shclsrchi2.png", width: 102%), numbering: none, caption: "fb768 wih shared clusters cuts and tpc #crossed rows >= 80"),
+      figure(image("/images/0420/compf2_fb768shclsrchi2.png", width: 102%), numbering: none, caption: "fb768 with DCA cut and shared clusters cuts and tpc #crossed rows >= 80"),
     ),
   )
 ]
@@ -473,21 +473,6 @@ $F_q (M) equiv  (lr(angle.l, size: #200%) 1/M^(2) sum_(i=1)^(M^(2)) n_"ie" (n_"i
   #figure(image("/images/comp_allcuts_128_leg.png", width: 37%), numbering: none)
 ] */
 
-== Final fb128 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
-#place(center, dy: 0em)[
-  #figure(
-    grid(
-      columns: (2.1fr, 1fr),
-      inset: -9pt,
-      align: center,
-      figure(image("/images/comp_allcuts_128.png", width: 100%), numbering: none),
-      v(2em) + figure(image("/images/comp_allcuts_128_leg.png", width: 87%), numbering: none),
-    ),
-  )
-]
-#place(left, dy: 16em)[#figure(image("/images/comp_allcuts_128_11.png", width: 30%), numbering: none)]
-#place(center, dy: 16em)[#figure(image("/images/comp_allcuts_128_12.png", width: 30%), numbering: none)]
-
 
 == Final fb128 (0.4 $<=$ _p_#sub[T] $<=$ 2.0)
 #place(center, dy: 0em)[
@@ -501,8 +486,63 @@ $F_q (M) equiv  (lr(angle.l, size: #200%) 1/M^(2) sum_(i=1)^(M^(2)) n_"ie" (n_"i
     ),
   )
 ]
-#place(left, dy: 16em)[#figure(image("/images/comp_allcuts_128_1_1.png", width: 30%), numbering: none)]
-#place(center, dy: 16em)[#figure(image("/images/comp_allcuts_128_1_2.png", width: 30%), numbering: none)]
+/* #place(left, dy: 16em)[#figure(image("/images/comp_allcuts_128_1_1.png", width: 30%), numbering: none)] */
+#place(left, dy: 14em)[#figure(image("/images/comp_allcuts_128_1_2.png", width: 40%), numbering: none)]
+
+== Final fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0) #checkmark.box
+#place(center, dy: 0.18em)[
+  #figure(
+    grid(
+      columns: (2.1fr, 1fr),
+      inset: -9pt,
+      align: center,
+      figure(image("/images/comp_allcuts_768_1.png", width: 100%), numbering: none),
+      v(2em) + figure(image("/images/comp_allcuts_768_leg.png", width: 87%), numbering: none),
+    ),
+  )
+]
+/* #place(left, dy: 16em)[#figure(image("/images/comp_allcuts_768_1_1.png", width: 30%), numbering: none)] */
+#place(left, dy: 14em)[#figure(image("/images/comp_allcuts_768_1_2.png", width: 38%), numbering: none)]
+
+
+= Conclusions
+== Conclusions
+- filterbits (128 and 768) studied for Pb--Pb HIJING datasets of 2010 (2.76 TeV), 2015 (5.02 TeV) and 2018 (5.02 TeV):
+  - QA within $abs(v_z) < 10$, $abs(eta) < 0.8$, 0--10% central events of each dataset.
+  - closure behaviour of $F_" q" (M)$ within $abs(v_z) < 10$, $abs(eta) < 0.8$, _p_#sub[T] ranges: 0.2--2.0 and 0.4--2.0, and most central 0--5% events.
+- fb128 method unreliable in AODs. Cuts when applied manually work.
+  - but higher contamination (material + weak decays) is observed compared to fb768 across datasets.
+  - Good baseline closure behaviour for 2010 but trends of $F_" q" (M)$ completely different for 2.76 TeV and 5.02 TeV.
+- fb768 cleaner but has poorer closure baseline.
+- Cuts to improve the closure:
+  - TPC shared cluster cuts used to mitigate track splitting/merging effects: \#sharedclusters/\#clusters $<=$ 0.3, \#sharedclusters/\#crossedRows $<=$ 0.25, and \#findableclusters/\#clusters $>=$ 0.8.
+    - fb768 closure improves consistently with TPC clusters cuts, worsens for fb128.
+  - _p_#sub[T] dependent DCA#sub[xy] cuts used:
+    - Combined with \#crossedRows $>= 80$ and shared-clusters cuts. #sym.arrow.r #note[best performance for fb768.]
+
+#place(left, dy: 3em)[
+      #figure(image("/images/0420/compf2_fb768shclsrchi2.png", width: 42%), numbering: none, caption: ""),
+]
+
+
+= Thank you
+
+= Backup
+== Final fb128 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place(center, dy: 0em)[
+  #figure(
+    grid(
+      columns: (2.1fr, 1fr),
+      inset: -9pt,
+      align: center,
+      figure(image("/images/comp_allcuts_128.png", width: 100%), numbering: none),
+      v(2em) + figure(image("/images/comp_allcuts_128_leg.png", width: 87%), numbering: none),
+    ),
+  )
+]
+/* #place(left, dy: 16em)[#figure(image("/images/comp_allcuts_128_11.png", width: 30%), numbering: none)]
+#place(center, dy: 16em)[#figure(image("/images/comp_allcuts_128_12.png", width: 30%), numbering: none)] */
+
 
 == Final fb768 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
 #place(center, dy: 0em)[
@@ -516,36 +556,5 @@ $F_q (M) equiv  (lr(angle.l, size: #200%) 1/M^(2) sum_(i=1)^(M^(2)) n_"ie" (n_"i
     ),
   )
 ]
-#place(left, dy: 16em)[#figure(image("/images/comp_allcuts_768_11.png", width: 30%), numbering: none)]
-#place(center, dy: 16em)[#figure(image("/images/comp_allcuts_768_12.png", width: 30%), numbering: none)]
-
-
-== Final fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0) #checkmark.box
-#place(center, dy: 0.3em)[
-  #figure(
-    grid(
-      columns: (2.1fr, 1fr),
-      inset: -9pt,
-      align: center,
-      figure(image("/images/comp_allcuts_768_1.png", width: 100%), numbering: none),
-      v(2em) + figure(image("/images/comp_allcuts_768_leg.png", width: 87%), numbering: none),
-    ),
-  )
-]
-#place(left, dy: 16em)[#figure(image("/images/comp_allcuts_768_1_1.png", width: 30%), numbering: none)]
-#place(center, dy: 16em)[#figure(image("/images/comp_allcuts_768_1_2.png", width: 30%), numbering: none)]
-
-
-= Conclusions
-== Conclusions
-- filterbits (128 and 768) studied for Pb--Pb HIJING datasets of 2010 (2.76 TeV), 2015 (5.02 TeV) and 2018 (5.02 TeV):
-  - QA within $abs(v_z) < 10$, $abs(eta) < 0.8$, 0--10% central events of each dataset.
-  - closure behaviour of $F_" q" (M)$ within $abs(v_z) < 10$, $abs(eta) < 0.8$, _p_#sub[T] ranges: 0.2--2.0 and 0.4--2.0, and most central 0--5% events.
-- fb128 method unreliable in AODs. Manual cuts work but show higher contamination (material + weak decays) across datasets. Good baseline closure for 2010 but trends alike.
-- fb768 cleaner but poorer closure baseline.
-- TPC shared cluster cuts used to mitigate track splitting/merging effects: \#sharedclusters/\#clusters $<=$ 0.3, \#sharedclusters/\#crossedRows $<=$ 0.25, and \#findableclusters/\#clusters $>=$ 0.8. fb768 closure improves consistently with TPC clusters cuts, worsens for fb128.
-- _p_#sub[T] dependent DCA#sub[xy] cuts used:
-  - Combined with \#crossedRows $>= 80$ and shared-clusters cuts #sym.arrow.r #note[best performance for fb768.]
-
-
-= Thank you
+/* #place(left, dy: 16em)[#figure(image("/images/comp_allcuts_768_11.png", width: 30%), numbering: none)]
+#place(center, dy: 16em)[#figure(image("/images/comp_allcuts_768_12.png", width: 30%), numbering: none)] */
