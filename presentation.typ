@@ -409,6 +409,76 @@
   )
 ]
 
+/* == Final fb128 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place(center, dy: 0em)[
+  #figure(
+    grid(
+      columns: (1fr, 1fr),
+      inset: -4pt,
+      align: center,
+      figure(image("/images/comp_allcuts_128.png", width: 100%), numbering: none),
+      figure(image("/images/comp_allcuts_128_1.png", width: 100%), numbering: none),
+    ),
+  )
+]
+#place(left, dy: 11em)[
+  #figure(image("/images/comp_allcuts_128_leg.png", width: 37%), numbering: none)
+] */
+
+== Final fb128 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place(center, dy: 0em)[
+  #figure(
+    grid(
+      columns: (2.1fr, 1fr),
+      inset: -9pt,
+      align: center,
+      figure(image("/images/comp_allcuts_128.png", width: 100%), numbering: none),
+      v(2em) + figure(image("/images/comp_allcuts_128_leg.png", width: 87%), numbering: none),
+    ),
+  )
+]
+
+== Final fb128 (0.4 $<=$ _p_#sub[T] $<=$ 2.0)
+#place(center, dy: 0em)[
+  #figure(
+    grid(
+      columns: (2.1fr, 1fr),
+      inset: -9pt,
+      align: center,
+      figure(image("/images/comp_allcuts_128_1.png", width: 100%), numbering: none),
+      v(2em) + figure(image("/images/comp_allcuts_128_leg.png", width: 87%), numbering: none),
+    ),
+  )
+]
+
+== Final fb768 (0.2 $<=$ _p_#sub[T] $<=$ 2.0)
+#place(center, dy: 0em)[
+  #figure(
+    grid(
+      columns: (2.1fr, 1fr),
+      inset: -9pt,
+      align: center,
+      figure(image("/images/comp_allcuts_768.png", width: 100%), numbering: none),
+      v(2em) + figure(image("/images/comp_allcuts_768_leg.png", width: 87%), numbering: none),
+    ),
+  )
+]
+
+
+== Final fb768 (0.4 $<=$ _p_#sub[T] $<=$ 2.0)
+#place(center, dy: 0em)[
+  #figure(
+    grid(
+      columns: (2.1fr, 1fr),
+      inset: -9pt,
+      align: center,
+      figure(image("/images/comp_allcuts_768_1.png", width: 100%), numbering: none),
+      v(2em) + figure(image("/images/comp_allcuts_768_leg.png", width: 87%), numbering: none),
+    ),
+  )
+]
+
+
 = Conclusions
 == Conclusions
 - filterbits (128 and 768) studied for Pb--Pb HIJING datasets of 2010 (2.76 TeV), 2015 (5.02 TeV) and 2018 (5.02 TeV):
